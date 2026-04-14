@@ -1,68 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amigos de Estrada</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amigos de Estrada</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:url('img/Arte 3.png') no-repeat center center fixed;
+    background-size:cover;
+    color:white;
+}
+
+/* TOPO (NÃO FIXO) */
+.topo{
+    position:absolute;
+    top:30px;
+    left:30px;
+    right:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* TÍTULO */
+.titulo h1{
+    margin:0;
+    font-size:28px;
+}
+
+.titulo h2{
+    margin:0;
+    font-size:14px;
+    font-weight:normal;
+}
+
+/* MENU */
+.menu a{
+    margin-left:20px;
+    color:white;
+    text-decoration:none;
+}
+
+/* ESPAÇO */
+.espaco{
+    height:140px;
+}
+
+/* VIDEOS */
+.video{
+    width:100%;
+    max-width:1000px;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    border-radius:10px;
+}
+</style>
+
 </head>
 
-<body style="margin:0; font-family:Arial; background:url('img/Arte 3.png') no-repeat center center fixed; background-size:cover; color:white;">
+<body>
 
-    <!-- TÍTULO -->
-    <div style="position:absolute; top:40px; left:40px;">
-        <h1 style="margin:0; font-size:60px;">
-            Amigos de Estrada
-        </h1>
-        <h2 style="margin-top:8px; font-size:25px; font-weight:normal;">
-            Sertanejo Universitário e Moda de Viola
-        </h2>
+<!-- TOPO -->
+<div class="topo">
+
+    <div class="titulo">
+        <h1>Amigos de Estrada</h1>
+        <h2>Sertanejo Universitário e Moda de Viola</h2>
     </div>
 
-    <!-- MENU -->
-    <div style="position:absolute; top:40px; right:40px;">
-        <a href="fotos.html" style="margin-left:20px; color:white; text-decoration:none;">Fotos</a>
-        <a href="contato.html" style="margin-left:20px; color:white; text-decoration:none;">Contato</a>
+    <div class="menu">
+        <a href="fotos.html">Fotos</a>
+        <a href="contato.html">Contato</a>
     </div>
 
-    <!-- VIDEO 1 -->
-    <div style="text-align:center; margin-top:250px;">
-        <video controls style="width:100%; max-width:1000px;">
-            <source src="videos/Clichê - Musica.mp4" type="video/mp4">
-        </video>
+</div>
 
-        <p style="margin-top:20px; font-size:30px;">
-            Música - Clichê
-        </p>
-    </div>
+<!-- ESPAÇO -->
+<div class="espaco"></div>
 
-    <!-- VIDEO 2 -->
-  <div style="text-align:center; padding:20px;">
-    
-   <video controls style="width:100%; max-width:1000px; aspect-ratio:16/9; object-fit:cover; border-radius:10px;">
-    <source src="videos/Flores em Vida.mp4" type="video/mp4">
-</video>
+<!-- VIDEO 1 -->
+<div style="text-align:center;">
+    <video controls class="video">
+        <source src="videos/Clichê - Musica.mp4">
+    </video>
+    <p style="font-size:30px;">Música - Clichê</p>
+</div>
 
- <p style="margin-top:20px; font-size:30px; max-width:900px; margin-left:auto; margin-right:auto;">
-       Música - Flores em Vida
+<!-- VIDEO 2 -->
+<div style="text-align:center; padding:20px;">
+    <video controls class="video">
+        <source src="videos/Flores em Vida.mp4">
+    </video>
+    <p style="font-size:30px;">Música - Flores em Vida</p>
+</div>
+
+<!-- VIDEO 3 -->
+<div style="text-align:center; padding:20px;">
+    <video controls class="video">
+        <source src="videos/Teste 1.mp4">
+    </video>
+    <p style="font-size:30px;">Música - Igrejinha Azul</p>
+</div>
+
+<!-- VIDEO 4 -->
+<div style="text-align:center; padding:20px;">
+    <video controls class="video">
+        <source src="videos/Teste 2.mp4">
+    </video>
+    <p style="font-size:30px;">Música - Ai eu chorei</p>
+</div>
+
+<!-- FOTO -->
+<div style="text-align:center; margin-top:40px;">
+    <img src="img/Trio.png" style="width:100%; max-width:700px; border-radius:10px;">
+    <p style="font-size:30px; max-width:700px; margin:auto;">
+        Grupo musical formado pelos cantores, Gabriel, Ney Santtiny e Fabiano Barreiro.
     </p>
+</div>
 
-    </div>
-
-
-    <!-- FOTO -->
-    <div style="text-align:center; margin-top:40px;">
-        <img src="img/Trio.png" style="width:100%; max-width:800px;">
-
-        <p style="font-size:30px; max-width:700px; margin:auto;">
-            Grupo musical formado pelos cantores, Gabriel, Ney Santtiny e Fabiano Barreiro, com intuito de levar alegria através da música sertaneja.
-        </p>
-    </div>
-
-    <!-- INSTAGRAM -->
-    <div style="width:100%; padding:40px 20px;">
+ <!-- INSTAGRAM -->
+<div style="width:100%; padding:40px 20px; display:flex; justify-content:flex-start;">
 
     <a href="https://www.instagram.com/amigosdeestradaoficiall?igsh=MXR6YXNvdThyYXkzbw==" target="_blank"
-    style="display:inline-block;">
+    style="display:flex; align-items:center; gap:10px; text-decoration:none; color:white; font-size:18px;">
 
         <svg viewBox="0 0 24 24" width="35" height="35" fill="white">
             <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 
@@ -74,10 +137,11 @@
             1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/>
         </svg>
 
+        <span>Instagram</span>
+
     </a>
 
 </div>
-
 
 </body>
 </html>
